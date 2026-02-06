@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LankaSmart | Shop</title>
+  <link rel="stylesheet" href="../css/shop.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<nav>
+  <h2>LankaSmart</h2>
+  <span class="menu-btn" onclick="toggleMenu()">☰</span>
+  <ul id="navLinks">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="shop.html"  class="active">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" >Contact</a></li>
+  </ul>
+</nav>
+
+<!-- SEARCH & FILTER -->
+<section class="filter-bar">
+  <input type="text" id="searchInput" placeholder="Search brand or model...">
+
+  <select id="brandFilter">
+    <option value="">All Brands</option>
+    <option value="Apple">Apple</option>
+    <option value="Samsung">Samsung</option>
+    <option value="Huawei">Huawei</option>
+    <option value="Honor">Honor</option>
+    <option value="Realme">Realme</option>
+    <option value="Nubia">Nubia</option>
+  </select>
+
+  <select id="osFilter">
+    <option value="">All OS</option>
+    <option value="iOS">iOS</option>
+    <option value="Android">Android</option>
+  </select>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="productList">
+  <!-- JS map products here -->
+</section>
+
+<footer>
+  © 2026 LankaSmart | Made for Sri Lanka 🇱🇰
+</footer>
+
+<script src="../JS/shop.js"></script>
+</body>
+</html>

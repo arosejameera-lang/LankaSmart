@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+}
+
+/* NAVBAR */
+nav {
+  background: #0a58ca;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 30px;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav ul li a.active {
+  text-decoration: underline;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* HERO */
+.contact-hero {
+  height: 50vh;
+  background: url("../assets/about/download.jpg") center/cover no-repeat;
+}
+
+.contact-hero .overlay {
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  padding: 60px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 40px;
+}
+
+.contact-info {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.contact-info h2 {
+  margin-bottom: 10px;
+}
+
+.info-item {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.info-item i {
+  color: #0a58ca;
+  margin-right: 10px;
+}
+
+.socials i {
+  font-size: 22px;
+  margin-right: 15px;
+  color: #0a58ca;
+  cursor: pointer;
+}
+
+/* FORM */
+.contact-form {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  background: #0a58ca;
+  color: white;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: #0a58ca;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #0a58ca;
+    width: 100%;
+    padding: 20px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
